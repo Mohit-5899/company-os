@@ -1,0 +1,20 @@
+{
+  "name": "company-os",
+  "version": "0.1.0",
+  "description": "Run your company with a Claude Code operating team: a Chief of Staff that plans the day, sends a 9 AM standup and a night report, and hands work to specialist desks (sales, content, social, website, ops). Agents draft; you approve. A hook blocks every send, publish and push until you say approve.",
+  "author": {
+    "name": "Mohit Mandawat",
+    "url": "https://www.quantaailabs.com/"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/Mohit-5899/company-os",
+  "userConfig": {
+    "company_dir": {
+      "type": "directory",
+      "title": "Company folder",
+      "description": "Absolute path to your company-os folder (made by /company-os:setup). The approval gate stays off until this is set.",
+      "required": false
+    }
+  },
+  "keywords": ["operations", "chief-of-staff", "agents", "founder", "approvals", "routines", "small-business"]
+}

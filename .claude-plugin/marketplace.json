@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "company-os",
+  "description": "An AI operating team for founders, built on Claude Code.",
+  "owner": {
+    "name": "Mohit Mandawat"
+  },
+  "plugins": [
+    {
+      "name": "company-os",
+      "source": "./",
+      "description": "Chief of Staff + specialist desks, a daily standup and night report, one approvals list, and a hook that blocks anything public until you approve it. Run /company-os:setup to fit it to your company.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Mohit Mandawat"
+      },
+      "license": "MIT",
+      "keywords": ["operations", "chief-of-staff", "agents", "founder", "approvals"]
+    }
+  ]
+}

@@ -31,9 +31,9 @@ OUTBOUND = {
     "place_order", "modify_order", "place_gtt_order", "modify_gtt_order",
 }
 APPROVE_PROMPT = re.compile(r"^\s*/?(company-os:)?approve\b", re.IGNORECASE)
-GIT_PUSH = re.compile(r"\bgit\s+push\b")
+GIT_PUSH = re.compile(r"\bgit\b[^|;&]*\bpush\b")  # also `git -C dir push`
 MAIN_BRANCH = re.compile(r"\b(main|master)\b")
-PR_MERGE = re.compile(r"\bgh\s+pr\s+merge\b")
+PR_MERGE = re.compile(r"\bgh\s+(pr\s+merge|repo\s+create\b[^|;&]*--push)\b")
 
 
 def company_dir():

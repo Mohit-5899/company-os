@@ -67,7 +67,8 @@ company-os/
 4. Claude carries out exactly those items and marks them **Done** with a link.
 
 The gate blocks: email send/reply/forward, social post create/publish/edit/delete (drafts are fine), comment and
-mention replies, outbound calls, file sharing, broker orders, `git push` to main/master and `gh pr merge`. Add more
+mention replies, outbound calls, file sharing, broker orders, `git push` to main/master, `gh pr merge` and `gh repo create --push`. It matches command text, so a
+command that only mentions a push to main is blocked too (safe side). Add more
 tool names in `config.json` → `extra_outbound`. Agents can't open the gate themselves.
 
 **Note:** once configured, the gate applies to every Claude Code session on your machine, not just company work. Any

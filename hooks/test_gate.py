@@ -35,7 +35,10 @@ with tempfile.TemporaryDirectory() as tmp:
     assert not pre("mcp__zernio__posts_list", {}), "reads are fine"
     assert pre("Bash", {"command": "git push origin main"}), "push to main must be denied"
     assert not pre("Bash", {"command": "git push origin feature-x"}), "branch push is fine"
+    assert pre("Bash", {"command": "git -C /x push origin main"}), "push with -C must be denied"
     assert pre("Bash", {"command": "gh pr merge 12"}), "merge must be denied"
+    assert pre("Bash", {"command": "gh repo create me/x --public --source . --push"}), "create+push denied"
+    assert not pre("Bash", {"command": "gh repo create me/x --public --source ."}), "create alone is fine"
     assert pre("Write", {"file_path": str(data / "gate-open")}), "agents can't open the gate"
     assert pre("Bash", {"command": f"touch {data}/gate-open"}), "agents can't open the gate"
 

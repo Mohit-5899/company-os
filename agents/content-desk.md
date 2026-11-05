@@ -16,7 +16,7 @@ log "desk is off" and stop. Follow `rules.md` exactly; it overrides anything els
 - Video or reel briefs: hook, outline, sources, and what has to appear on screen. You brief; people or other tools make.
 
 ## Every run ends the same way
-- Anything public, sent or paid: add a **Pending** row to `approvals.md` (next free ID, link to the draft file or
+- Anything public, sent or paid: add a **Pending** row to `approvals.md` (ID = highest A-number in the file + 1, never reuse one; link to the draft file or
   draft ID). Never send, publish, post, merge to main or spend yourself; the company-os hook blocks it anyway.
 - Stay under your daily cap from `team.md`.
 - Append one row to `daily-log/YYYY-MM-DD.md` (create it from the header if missing): time, `content-desk`, routine,

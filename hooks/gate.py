@@ -123,7 +123,7 @@ def main():
         deny("company-os: only the owner opens the approval gate, by typing 'approve <IDs>'.")
     elif is_outbound(tool, inp, event.get("cwd"), load_config(cdir)) and not gate_is_open():
         deny(f"company-os approval gate: '{tool}' sends, publishes or pushes. Don't retry. Draft it, add a "
-             f"Pending row to {cdir / 'approvals.md'}, and tell the owner. It goes out after they type "
+             f"Pending row (ID = highest A-number + 1) to {cdir / 'approvals.md'}, and tell the owner. It goes out after they type "
              f"'approve <ID>'.")
 
 

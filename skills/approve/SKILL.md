@@ -18,7 +18,8 @@ The owner typed this, which opened the approval gate for 15 minutes. Work throug
    owner's message asked for them; if it did, apply them and say so.
 4. Set Status to **Done** and put the result (message ID, post URL, PR link) in Notes. If it failed, leave it Approved
    and write the error in Notes. Read the channel back before any retry, so nothing goes out twice.
-5. IDs that don't exist or aren't Pending: say so, do nothing.
+5. IDs that don't exist or aren't Pending: say so, do nothing. If an ID matches more than one row, list those rows
+   and ask which one; act on none until the owner answers.
 6. Log one row in today's `daily-log/` as `owner-approval`, listing the IDs and results.
 
 If the gate denies a call (more than 15 minutes passed), stop and ask the owner to type `approve <IDs>` again.

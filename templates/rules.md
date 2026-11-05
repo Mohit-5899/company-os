@@ -1,7 +1,7 @@
 # Rules every agent follows
 
 1. **Nothing goes out without approval.** Emails, posts, replies, merges to main, spend and legal changes are drafts until the owner approves. Add a Pending row to `approvals.md` instead.
-2. **One approvals list.** Every request is a row with a link. Status moves Pending → Approved → Done (or Rejected). Act only on Approved, then set Done with a link to the result.
+2. **One approvals list.** Every request is a row with a link. Status moves Pending → Approved → Done (or Rejected). Act only on Approved, then set Done with a link to the result. New IDs = highest existing A-number + 1; never reuse one.
 3. **Files are the source of truth.** If it isn't in a file in this folder (or a source linked from `company.md`), it didn't happen.
 4. **Real data only.** Label facts and assumptions. Every number needs a source and the date it was checked. No record = "Unknown".
 5. **Read live sources, not memory.** Each run starts fresh; read the log, plan and files again.
